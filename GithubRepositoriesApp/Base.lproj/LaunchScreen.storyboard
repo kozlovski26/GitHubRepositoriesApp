@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ejt-pG-oWB">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pu3-Kf-t2a">
+            <objects>
+                <viewController id="Ejt-pG-oWB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWZ-oT-0vf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Github reposetories App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcC-dX-S09">
+                                <rect key="frame" x="26" y="130" width="368" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="IZd-fH-tGr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Github" translatesAutoresizingMaskIntoConstraints="NO" id="3yf-nI-hEE">
+                                <rect key="frame" x="84" y="172" width="246" height="604"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rcC-dX-S09" firstAttribute="top" secondItem="0dW-XD-PcF" secondAttribute="top" constant="86" id="3A1-uC-C8a"/>
+                            <constraint firstItem="0dW-XD-PcF" firstAttribute="bottom" secondItem="3yf-nI-hEE" secondAttribute="bottom" constant="86" id="4aS-aN-Gpp"/>
+                            <constraint firstItem="3yf-nI-hEE" firstAttribute="centerX" secondItem="zWZ-oT-0vf" secondAttribute="centerX" id="LJF-CJ-Xgi"/>
+                            <constraint firstItem="3yf-nI-hEE" firstAttribute="top" secondItem="rcC-dX-S09" secondAttribute="bottom" constant="22" id="UbK-mA-TSB"/>
+                            <constraint firstItem="rcC-dX-S09" firstAttribute="leading" secondItem="0dW-XD-PcF" secondAttribute="leading" constant="26" id="bre-ud-Vaf"/>
+                            <constraint firstItem="rcC-dX-S09" firstAttribute="trailing" secondItem="zWZ-oT-0vf" secondAttribute="trailingMargin" id="bt9-CU-s8E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0dW-XD-PcF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vx-dm-0Kb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.125" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Github" width="246" height="205"/>
+    </resources>
+</document>
